@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/device_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:hint="裝置ID" />
+
+    <EditText
+        android:id="@+id/device_mac"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:hint="裝置MAC" />
+
+    <RadioGroup
+        android:id="@+id/device_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="電燈" />
+
+        <RadioButton
+            android:id="@+id/air_cond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="冷氣" />
+
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/optRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/btndialog"
+        android:text="取消"/>
+
+</LinearLayout>
